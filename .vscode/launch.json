@@ -1,0 +1,60 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Dreams in full color - blend only",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/zoom_video_composer.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--blend-images-only",
+        "D:\\Sam\\Projectjes\\Midjourney\\dreams_in_full_color\\FRAMES"
+      ]
+    },
+    {
+      "name": "Dreams in full color - fast",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/zoom_video_composer.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "D:\\Sam\\Projectjes\\Midjourney\\dreams_in_full_color\\FRAMES",
+        "-o",
+        "dreams_in_full_color-test.mp4",
+        "-d",
+        "150",
+        "-e",
+        "linearWithInOutEase",
+        "--ease-duration",
+        "0.033"
+      ]
+    },
+    {
+      "name": "Dreams in full color - super sampled",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/zoom_video_composer.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "D:\\Sam\\Projectjes\\Midjourney\\dreams_in_full_color\\FRAMES",
+        "-o",
+        "dreams_in_full_color.mp4",
+        "-d",
+        "150",
+        "-e",
+        "linearWithInOutEase",
+        "--ease-duration",
+        "0.033",
+        "--super-sampling",
+        "4"
+      ]
+    }
+  ]
+}
