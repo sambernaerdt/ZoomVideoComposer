@@ -28,11 +28,11 @@
         "-o",
         "dreams_in_full_color-test.mp4",
         "-d",
-        "150",
+        "212",
         "-e",
         "linearWithInOutEase",
         "--ease-duration",
-        "0.033"
+        "0.02"
       ]
     },
     {
@@ -47,13 +47,27 @@
         "-o",
         "dreams_in_full_color.mp4",
         "-d",
-        "150",
+        "212",
         "-e",
         "linearWithInOutEase",
         "--ease-duration",
-        "0.033",
+        "0.02",
         "--super-sampling",
-        "4"
+        "4",
+        "--fps",
+        "60"
+      ]
+    },
+    {
+      "name": "Rat's nest - blend only",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/zoom_video_composer.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--blend-images-only",
+        "D:/Sam/Projectjes/Midjourney/rats_nest/FRAMES"
       ]
     }
   ]
